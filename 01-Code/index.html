@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWCB HW01 - Code Refactor</title>
+    <link rel="stylesheet" href="../assets/css/">
+    <style>
+        figure {
+            margin: 0;
+            display: inline-block;
+            max-width:500px;
+            width:48%
+        }
+        figure img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 993px) {
+            figure {
+                margin: 0;
+                display: inline-block;
+                max-width:500px;
+                width:100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Homework assignment for <strong>week 1</strong> of <em>UW Coding Bootcamp</em>.</h1>
+    
+    <h2>TASK</h2>
+    <p>Refactor a codebase so that it follows accessibility standards and the site is optimized for search engines.</p>
+    
+    <h2>Links</h2>
+    <p>You can see the <a href="./original_site/" target="_blank"><strong>ORIGINAL</strong></a> site or the <a href="./updated_site/" target="_blank"><strong>UPDATED</strong></a> site.</p>
+    <p>You can also see the <a href="https://github.com/ToMakPo/UWCB-HW01-Code_Refactor" target="_blank"><strong>GitHub repo</strong></a> for this project.</p>
+
+    <h2>Changes Made</h2>
+    <h3>HTML</h3>
+    <ul>
+        <li>Changed the <code>div</code> tags to semantic HTML elements like <code>header</code> and <code>section</code>.</li>
+        <li>Added spacing between HTML elements to make it easyer to read.</li>
+        <li>Changed class names to ids where appropriate.</li>
+        <li>Added class names to like elements to help group them together.</li>
+        <li>Added <code>alt</code> attributes to images to assist those with vision imparments.</li>
+        <li>Changed the <code>title</code> to one that is more discriptive of the website.</li>
+        <li>Checked that all of the links work as intended.</li>
+    </ul>
+    <figure>
+        <figcaption>Original HTML</figcaption>
+        <img src="./images/old_html.png" alt="Original HTML">
+    </figure>
+    <figure>
+        <figcaption>Updated HTML</figcaption>
+        <img src="./images/new_html.png" alt="Updated HTML">
+    </figure>
+    
+    <h3>CSS</h3>
+    <ul>
+        <li>Added comments to help group different parts of the code.</li>
+        <li>Moved certain items around to make sure it follows a logical structure.</li>
+        <li>Combined reapeating code to go to specific classes instead of each individual element.</li>
+    </ul>
+    <figure>
+        <figcaption>Original CSS</figcaption>
+        <img src="./images/old_css.png" alt="Original CSS">
+    </figure>
+    <figure>
+        <figcaption>Updated CSS</figcaption>
+        <img src="./images/new_css.png" alt="Updated CSS">
+    </figure>
+</body>
+</html>
