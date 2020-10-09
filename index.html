@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UW Coding Bootcamp Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <style>
+        .project-info {
+            counter-increment: project_counter;
+            width: calc(100% - 45px);
+            float: right;
+        }
+        .project-info::before {
+            content: counter(project_counter) ". ";
+            position: absolute;
+            text-align: right;
+            transform: translateX(-100%);
+            padding-right: 5px;
+        }
+
+        .project-info::before, .project-info > a {
+            font-size: 1.35em;
+        }
+    </style>
+</head>
+<body>
+    <h1>UW Coding Bootcamp Portfolio</h1>
+    <section class="project-info">
+        <a href="./01-Code_Refactor/" target="_blank">Code Refactor</a>
+        <p>Refactor a codebase so that it follows accessibility standards and the site is optimized for search engines.</p>
+    </section>
+</body>
+</html>
